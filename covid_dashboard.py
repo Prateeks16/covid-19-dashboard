@@ -11,7 +11,7 @@ st.set_page_config(page_title="COVID-19 Dashboard", layout="wide")
 # Load the dataset with caching for performance
 @st.cache_data
 def load_data():
-    return pd.read_csv("P:\\Data science\\Python\\covid dataset\\owid-covid-data.csv", encoding="utf-8", engine="python")
+    return pd.read_csv("owid-covid-data.csv", encoding="utf-8", engine="python")
 
 df = load_data()
 
